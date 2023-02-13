@@ -1,15 +1,15 @@
-package ie.atu.productv3;
+package productv4;
+
+
 
 public class Book extends Product {
 
     private String author;
-    private String label;
 
     public Book() {
         super();
         author = "";
-        label = "";
-
+        count++;
     }
 
     public void setAuthor(String author) {
@@ -20,16 +20,8 @@ public class Book extends Product {
         return author;
     }
 
-    public void setLabel(String label) {
-        this.label = label;
-    }
-
-    public String getLabel() {
-        return label;
-    }
-
     @Override
     public String toString() {
-        return super.toString() + (" by " + author) + ("from" + label) ;
+        return super.toString() + " by " + author;
     }
 }
